@@ -1,0 +1,338 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Jesse Rogers Resume</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Resume of Jesse Rogers, instructional designer and Learning Lab Coordinator at Palm Beach State College.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: one calm reading column under a quiet top bar; evidence-first, labels never rely on color alone (same rules as Learn WITH Jesse). */
+:root {
+  --bg: #FBFBF9;
+  --surface: #F3F4F1;
+  --fg: #101626;
+  --muted: #5D6370;
+  --line: #D9DBD6;
+  --green: #15A15A;
+  --green-text: #0B7A41;
+  --on-green: #FFFFFF;
+  --grey-mark: #6F7480;
+  --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --gutter: max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(16px, env(safe-area-inset-right, 0px));
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101626; --surface: #172036; --fg: #F3F4F1; --muted: #9DA2AD; --line: #2A3350;
+    --green: #2FB874; --green-text: #4AD18C; --on-green: #08140E; --grey-mark: #9DA2AD;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101626; --surface: #172036; --fg: #F3F4F1; --muted: #9DA2AD; --line: #2A3350;
+  --green: #2FB874; --green-text: #4AD18C; --on-green: #08140E; --grey-mark: #9DA2AD;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: var(--font); font-size: 17px; line-height: 1.6;
+  padding-left: var(--gutter); padding-right: var(--gutter-r);
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 920px; margin: 0 auto; }
+a { color: var(--green-text); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--green); outline-offset: 3px; border-radius: 3px; }
+.skip { position: absolute; left: -999px; top: 8px; background: var(--fg); color: var(--bg); padding: 10px 14px; border-radius: 6px; z-index: 20; }
+.skip:focus { left: 8px; }
+
+/* top bar */
+header.bar { border-bottom: 1px solid var(--line); padding-block: 14px; }
+header.bar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px 24px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 12px; color: var(--fg); text-decoration: none; font-weight: 700; letter-spacing: -0.01em; }
+.brand svg { width: 64px; height: auto; display: block; flex: none; }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 2px 18px; font-size: 15px; }
+nav a { color: var(--muted); text-decoration: none; padding: 6px 0; display: inline-block; font-weight: 500; }
+nav a:hover { color: var(--fg); text-decoration: underline; }
+
+/* hero */
+.hero { padding-block: clamp(36px, 7vw, 76px) clamp(28px, 5vw, 48px); border-bottom: 1px solid var(--line); }
+.eyebrow { font-size: 13px; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
+h1 { font-size: clamp(40px, 8vw, 68px); line-height: 1.02; letter-spacing: -0.035em; font-weight: 800; margin: 0 0 10px; text-wrap: balance; }
+.role { font-size: clamp(19px, 2.6vw, 23px); font-weight: 500; margin: 0 0 22px; color: var(--fg); }
+.lede { font-size: clamp(18px, 2.2vw, 20px); max-width: 62ch; margin: 0 0 28px; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 12px 16px; align-items: center; }
+.btn { display: inline-flex; align-items: center; gap: 10px; background: var(--green); color: var(--on-green); font-weight: 700; font-size: 17px; text-decoration: none; padding: 14px 22px; border-radius: 4px; border: 2px solid var(--green); }
+.btn:hover { filter: brightness(1.06); text-decoration: none; }
+.btn .with { text-transform: uppercase; letter-spacing: 0.02em; }
+.btn-ghost { background: transparent; color: var(--fg); border: 2px solid var(--fg); }
+.btn-ghost:hover { background: var(--fg); color: var(--bg); filter: none; }
+.cta-note { font-size: 14px; color: var(--muted); margin: 14px 0 0; max-width: 60ch; }
+.growth { margin-top: 36px; width: 100%; max-width: 520px; height: auto; display: block; }
+.growth .draw { stroke-dasharray: 700; stroke-dashoffset: 0; animation: draw 1.8s ease-out 0.2s both; }
+@keyframes draw { from { stroke-dashoffset: 700; } to { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) { .growth .draw { animation: none; } html { scroll-behavior: auto; } }
+
+/* at a glance */
+.glance { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 0; margin: 0; padding: 0; border-bottom: 1px solid var(--line); }
+.glance div { padding: 20px 20px 20px 0; min-width: 0; }
+.glance dt { font-size: 13px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); margin: 0 0 4px; }
+.glance dd { margin: 0; font-weight: 600; font-size: 16px; line-height: 1.4; }
+
+/* sections */
+section { padding-block: clamp(32px, 5vw, 52px); border-bottom: 1px solid var(--line); }
+section:last-of-type { border-bottom: 0; }
+h2 { font-size: clamp(26px, 4vw, 34px); letter-spacing: -0.025em; line-height: 1.15; margin: 0 0 22px; font-weight: 800; text-wrap: balance; }
+h3 { font-size: 19px; letter-spacing: -0.01em; margin: 34px 0 12px; font-weight: 700; }
+h3:first-of-type { margin-top: 8px; }
+p { margin: 0 0 14px; }
+ul.plain { margin: 0; padding-left: 1.2em; }
+ul.plain li { margin: 0 0 10px; padding-left: 4px; max-width: 70ch; }
+ul.plain li::marker { color: var(--green); }
+.job { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; align-items: baseline; margin-bottom: 4px; }
+.job h3 { margin: 0; }
+.dates { font-variant-numeric: tabular-nums; color: var(--muted); font-weight: 500; }
+.where { color: var(--muted); margin: 0 0 6px; }
+
+.expertise { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 8px 28px; }
+.expertise li { padding: 8px 0; border-top: 1px solid var(--line); min-width: 0; }
+
+/* labels: fill, outline, dash, each with words */
+.tag { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; padding: 2px 8px; border-radius: 3px; vertical-align: 2px; margin-right: 8px; white-space: nowrap; }
+.tag.open { background: var(--fg); color: var(--bg); border: 2px solid var(--fg); }
+.tag.done { border: 2px solid var(--fg); color: var(--fg); background: transparent; }
+.tag.live { border: 2px dashed var(--fg); color: var(--fg); background: transparent; }
+.legend { font-size: 14px; color: var(--muted); margin: 0 0 22px; max-width: 70ch; }
+.legend .tag { margin-right: 4px; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 0 0 18px; padding: 0; list-style: none; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 18px; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+.card h4 { margin: 0; font-size: 18px; letter-spacing: -0.01em; }
+.card p { margin: 0; font-size: 15px; color: var(--fg); }
+.card .tag { align-self: flex-start; margin: 0; }
+.card a.more { margin-top: auto; font-weight: 600; font-size: 15px; }
+
+.contact dl { display: grid; grid-template-columns: max-content 1fr; gap: 10px 22px; margin: 0 0 24px; }
+.contact dt { color: var(--muted); font-weight: 600; font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase; padding-top: 3px; }
+.contact dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+.band { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: clamp(20px, 4vw, 34px); }
+.band h2 { margin-bottom: 10px; }
+
+footer { border-top: 1px solid var(--line); padding-block: 26px 40px; font-size: 14px; color: var(--muted); }
+footer p { margin: 0 0 8px; max-width: 75ch; }
+
+@media (max-width: 520px) {
+  body { font-size: 16px; }
+  .contact dl { grid-template-columns: 1fr; gap: 2px; }
+  .contact dd { margin-bottom: 12px; }
+  .glance div { padding-right: 12px; }
+  nav ul { gap: 0 14px; }
+}
+@media print {
+  header.bar nav, .growth, .skip { display: none; }
+  body { font-size: 11pt; background: #fff; color: #000; }
+  a { color: #000; }
+  section { break-inside: avoid-page; padding-block: 14px; }
+}
+</style>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Jesse Rogers, top of page">
+      <svg viewBox="0 0 128 64" role="img" aria-hidden="true" focusable="false">
+        <!-- L axes -->
+        <path d="M10 6 V44 H120" fill="none" stroke="var(--fg)" stroke-width="4" stroke-linecap="butt" stroke-linejoin="miter"/>
+        <!-- W growth line: grey first dip, then green rising -->
+        <path d="M20 12 L34 38" fill="none" stroke="var(--grey-mark)" stroke-width="5" stroke-linejoin="miter"/>
+        <path d="M34 38 L48 18 L62 38 L98 8" fill="none" stroke="var(--green)" stroke-width="5" stroke-linejoin="miter" stroke-miterlimit="10"/>
+        <!-- x-axis title -->
+        <text x="65" y="62" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="15" letter-spacing="3" fill="var(--fg)">JESSE</text>
+      </svg>
+      <span>Jesse Rogers</span>
+    </a>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#tools">Open tools</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap" id="top">
+
+  <div class="hero">
+    <p class="eyebrow">Instructional design and educational technology</p>
+    <h1>Jesse Rogers</h1>
+    <p class="role">Learning Lab Coordinator, Palm Beach State College</p>
+    <p class="lede">I design and build learning objects, asynchronous courses, and faculty training, and I consult directly with faculty on course design and instructional technology. My work is grounded in learning science and released under open licenses so the college can reuse and adapt it.</p>
+    <div class="cta-row">
+      <a class="btn" href="https://learnwithjesse.com" rel="noopener">See the work at Learn <span class="with">With</span> Jesse <span aria-hidden="true">→</span></a>
+      <a class="btn btn-ghost" href="#experience">Read the resume</a>
+    </div>
+    <p class="cta-note">Learn WITH Jesse is my open library of research-backed teaching techniques for faculty. Every technique names its evidence, its limits, and when it does not work.</p>
+    <svg class="growth" viewBox="0 0 520 120" role="img" aria-label="Decorative line chart that dips once, then rises">
+      <path d="M8 6 V108 H512" fill="none" stroke="var(--line)" stroke-width="2"/>
+      <path class="draw" d="M24 30 L84 92 L150 50 L216 94 L360 22 L500 12" fill="none" stroke="var(--green)" stroke-width="5" stroke-linejoin="miter" stroke-miterlimit="10"/>
+      <path d="M24 30 L84 92" fill="none" stroke="var(--grey-mark)" stroke-width="5" stroke-linejoin="miter"/>
+    </svg>
+  </div>
+
+  <dl class="glance" aria-label="At a glance">
+    <div><dt>At the college</dt><dd>20 years, since 2006</dd></div>
+    <div><dt>Latest appraisal</dt><dd>Highly Successful</dd></div>
+    <div><dt>Built to CRLA standard</dt><dd>2 asynchronous Canvas courses</dd></div>
+    <div><dt>Largest audience</dt><dd>About 150 at the 2025 Florida OER Summit</dd></div>
+  </dl>
+
+  <section id="summary" aria-labelledby="h-summary">
+    <h2 id="h-summary">Professional summary</h2>
+    <p>Instructional designer and learning center leader with twenty years at Palm Beach State College. I design and build learning objects, asynchronous courses, and faculty training, and I consult directly with faculty on course design and instructional technology.</p>
+    <p>My work is grounded in learning science and released under open licenses so the college can reuse and adapt it. Recent projects include two asynchronous Canvas courses built to CRLA tutor certification standards and a suite of openly licensed math learning tools now in use by faculty across the mathematics department.</p>
+
+    <h3>Areas of expertise</h3>
+    <ul class="expertise">
+      <li>Instructional design and curriculum development</li>
+      <li>Canvas LMS course build and course design</li>
+      <li>Faculty consultation and training</li>
+      <li>Needs assessment</li>
+      <li>Assessment and evaluation design</li>
+      <li>Reusable learning objects and OER</li>
+      <li>WCAG 2.1 AA accessibility</li>
+      <li>HTML, CSS, JavaScript, Python</li>
+      <li>AI-assisted instructional production</li>
+      <li>Multimedia and interactive learning content</li>
+      <li>FERPA-aware technology practice</li>
+      <li>Project management from inception to delivery</li>
+    </ul>
+  </section>
+
+  <section id="experience" aria-labelledby="h-exp">
+    <h2 id="h-exp">Professional experience</h2>
+    <div class="job">
+      <h3>Learning Lab Coordinator, Mathematics</h3>
+      <span class="dates">2006 to present</span>
+    </div>
+    <p class="where">Palm Beach State College, Palm Beach Gardens Student Learning Center</p>
+
+    <h3>Instructional design and course development</h3>
+    <ul class="plain">
+      <li>Designed and built two asynchronous Canvas courses for CRLA tutor certification, developed to an external accreditation standard and submitted to SLC management.</li>
+      <li>Designed and delivered <a href="https://rogersmath.github.io/trio/" rel="noopener">Learning to Learn</a>, an interactive workshop on evidence-based study strategies built around retrieval practice, spaced repetition, elaboration, dual coding, interleaving, and the protégé effect, with a live in-session experiment and referenced sources.</li>
+      <li>Designed and delivered a 45-minute tutor training on Microsoft 365 Copilot Chat covering FERPA boundaries, verification practice, and a hands-on exercise in which participants build and stress-test a scaffolded AI tutor. Released under CC0 for reuse by other institutions. <a href="https://rogersmath.github.io/copilot-challenges/" rel="noopener">Open the exercises</a>.</li>
+      <li>Organized and facilitated Math Orientations for NextGen cohorts across two consecutive summers in collaboration with Dr. Prophete, plus online Math Orientations each semester.</li>
+      <li>Developed the Math Strategies Workshop as an interactive resource for Math Success Orientation.</li>
+    </ul>
+
+    <h3>Faculty and staff training</h3>
+    <ul class="plain">
+      <li><strong>Florida OER Summit, 2025.</strong> Presented AI applications in open learning resource development to approximately 150 education professionals.</li>
+      <li><strong>Liberal Arts Conference.</strong> Presented “Fighting Fake News With Games” and took part in a public debate on AI in education.</li>
+      <li><strong>Math Awareness Week.</strong> Presented on building and publishing math games.</li>
+      <li><strong>Emerging Leaders and Gold Standard.</strong> Delivered sessions on practical applications of Microsoft Copilot and web-based development for faculty and staff.</li>
+      <li><strong>OER training.</strong> Presented as part of College Affordability Task Force work.</li>
+      <li><strong>Panther Experience podcast.</strong> Invited guest, multiple appearances.</li>
+    </ul>
+
+    <h3>Leadership and supervision</h3>
+    <ul class="plain">
+      <li>Supervise learning lab staff, including hiring input, development, and completion of annual performance appraisals.</li>
+      <li>Co-chair of the SLC AI Work Group. Serve as the department’s primary resource on AI practice and route findings and guidance through the group.</li>
+      <li>Led 4DX implementation meetings and drove adoption of the group tutoring Wildly Important Goal.</li>
+      <li>Rated Highly Successful on the most recent annual performance appraisal, the rating for performance that exceeds expected goals and results.</li>
+    </ul>
+  </section>
+
+  <section id="tools" aria-labelledby="h-tools">
+    <h2 id="h-tools">Learning objects and open educational resources</h2>
+    <p>I built and released these tools under the MIT License, jointly credited to the author and Palm Beach State College, so faculty can adapt and redeploy them without cost or restriction.</p>
+    <p class="legend">Labels use fill, outline, and dash as well as words. <span class="tag open">Open license</span> released for reuse. <span class="tag done">Delivered</span> built and in use. <span class="tag live">Ongoing</span> still running.</p>
+    <ul class="cards">
+      <li class="card">
+        <span class="tag open">Open license · MIT</span>
+        <h4>Algebra SLC Survival Guide</h4>
+        <p>Mobile-ready algebra reference for MAT1033C covering formulas, worked examples, prerequisite-linked concepts, and curated video resources. Eight or more mathematics professors planned to share it with students. Each entry routes students to SLC tutoring.</p>
+        <a class="more" href="https://rogersmath.github.io/algebra/" rel="noopener">Open the guide</a>
+      </li>
+      <li class="card">
+        <span class="tag open">Open license · MIT</span>
+        <h4>Reactor Core</h4>
+        <p>Algebraic equation-solving puzzle built around stepwise variable isolation.</p>
+      </li>
+      <li class="card">
+        <span class="tag open">Open license · MIT</span>
+        <h4>Prime Hunter</h4>
+        <p>Arcade learning game covering prime factorization and composite identification.</p>
+      </li>
+      <li class="card">
+        <span class="tag open">Open license · MIT</span>
+        <h4>Self-Talk Reframer</h4>
+        <p>Growth mindset coaching tool for students.</p>
+      </li>
+    </ul>
+    <ul class="plain">
+      <li><span class="tag done">Delivered</span>Built the SLC services web resource at the request of the SLC Director to present center services to administrators, faculty, and students.</li>
+      <li><span class="tag done">Delivered</span>Produced an instructional video on computer science concepts, including Big O notation, to support students in COP3530.</li>
+    </ul>
+  </section>
+
+  <section id="service" aria-labelledby="h-service">
+    <h2 id="h-service">College committee service</h2>
+    <ul class="plain">
+      <li><strong>Academic Integrity Committee.</strong> Contributed to policy recommendations and advisory language on AI use in academic settings that achieved unanimous committee support.</li>
+      <li><strong>College Affordability Task Force.</strong> Contributed to affordability initiatives through AI-assisted Open Educational Resource development.</li>
+      <li><span class="tag live">Ongoing</span><strong>SLC AI Work Group.</strong> Co-chair.</li>
+    </ul>
+  </section>
+
+  <section id="education" aria-labelledby="h-edu">
+    <h2 id="h-edu">Education and professional development</h2>
+    <h3>Bachelor of Science, Finance and Economics</h3>
+    <p class="where">Florida State University · <span class="dates">2004</span></p>
+    <h3>Associate of Arts, Economics</h3>
+    <p class="where">Palm Beach State College · <span class="dates">2001</span></p>
+    <h3>Professional development</h3>
+    <ul class="plain">
+      <li><strong>Small Business University.</strong> Eight-week program offered through the Bachelor’s Degree Programs in partnership with a local construction company.</li>
+      <li><strong>Python self-study.</strong> Ongoing, to support students in COP1000 and COP3530.</li>
+    </ul>
+
+    <h3>Technical skills</h3>
+    <p>Canvas LMS · HTML5, CSS, JavaScript · Python · Microsoft 365 and Teams · Microsoft Copilot · Claude · Git and GitHub Pages · EAB Navigate · Scratch · Godot · WCAG 2.1 AA accessibility evaluation · AMA and academic citation practice</p>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="h-contact">
+    <h2 id="h-contact">Contact</h2>
+    <dl>
+      <dt>Email</dt><dd>rogersjj@pbsc.edu</dd>
+      <dt>Office</dt><dd>(561) 207-5202</dd>
+      <dt>Portfolio</dt><dd><a href="https://rogersmath.github.io/" rel="noopener">rogersmath.github.io</a></dd>
+      <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/jesse-rogers-42256797" rel="noopener">linkedin.com/in/jesse-rogers-42256797</a></dd>
+    </dl>
+    <div class="band">
+      <h2>Start with the work itself</h2>
+      <p>Learn WITH Jesse collects teaching techniques that faculty can adapt, with the research behind each one and a plain statement of where it falls short.</p>
+      <p><a class="btn" href="https://learnwithjesse.com" rel="noopener">Visit Learn <span class="with">With</span> Jesse <span aria-hidden="true">→</span></a></p>
+    </div>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>An independent site by Jesse Rogers. It is not an official page of Palm Beach State College.</p>
+    <p>Built with AI assistance and reviewed by Jesse. Updated October 17, 2026.</p>
+  </div>
+</footer>
+
+</body></html>
